@@ -4,4 +4,4 @@
 
 __author__ = """ChatrHub INC"""
 __email__ = 'admin@chatrhub.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'
