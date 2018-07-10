@@ -1,6 +1,6 @@
 # chatendpoint | ChatrHub
 
-Create custom actions for ChatrHub's automated chat agents https://chatrhub.com.  (Create a free account if you dont have one already here: https://chatrhub.com/signup/index.html).  Use this module when you want your chat dialog to interface with internal systems such as inventory or user management data stores.
+Create custom actions for ChatrHub's automated chat agents https://chatrhub.com.  (Create a free account if you don't have one already here: https://chatrhub.com/signup/index.html).  Use this module when you want your chat dialog to interface with internal systems such as inventory or user management data stores.
 
 You can pass variables collected in the dialog to the endpoint for processing and you can also pass variables back to the dialog to display to the user.
 
