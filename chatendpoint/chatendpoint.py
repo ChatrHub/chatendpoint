@@ -11,12 +11,10 @@ class Endpoint(tornado.web.RequestHandler):
     """Get and recieve variables with this endpoint template."""
     def post(self):
         """Get request."""
-        print("body: ", self.request.body)
         j = tornado.escape.json_decode(self.request.body)
         # Do something with json
 
         response = self.process_data(j)
-        print("response: ", response)
         if response is None:
             response = {}
 
@@ -66,12 +64,14 @@ class ChatEndpoints(object):
         if len(self._urls) == 0:
             raise ValueError("add endpoint first before starting.")
         if len(self._urls) != len(self._endpoint_classes):
-            raise ValueError("Do not manually update _urls or _endpoint_classes")
+            raise ValueError(
+                "Do not manually update _urls or _endpoint_classes"
+            )
 
         endpoints = []
         for idx, url in enumerate(self._urls):
-            print("idx: ", idx)
             endpoints.append((url, self._endpoint_classes[idx]))
+        print("Server: https://localhost:8888")
         print("endpoints: ", endpoints)
         application = tornado.web.Application(endpoints)
 
