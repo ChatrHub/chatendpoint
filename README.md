@@ -13,12 +13,12 @@ You can pass variables collected in the dialog to the endpoint for processing an
 
 ### 1. Install
 
-Clone this repository and add to your project.
+pip install chatendpoint
 
 ### 2. Create Endpoints
 
 ```python
-from chatendpoint import ChatEndpoints
+from chatendpoint.chatendpoint import ChatEndpoints
 def create_user(dialog_variables):
     # All dialog variables will be available in this dialog_variables dictionary
     # Access data store, manipulation of data
